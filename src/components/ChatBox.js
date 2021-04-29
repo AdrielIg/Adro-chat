@@ -14,7 +14,7 @@ function ChatBox() {
     const onUpdateDB = (mensajeEnviado) => {
 
 
-        db.collection("messages").add({ timestamp: Date.now(), message: mensajeEnviado })
+        db.collection("messages").add({ timestamp: Date.now(), message: mensajeEnviado, user: sessionStorage.getItem("userName") })
 
 
 

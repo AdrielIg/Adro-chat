@@ -8,17 +8,15 @@ import GetUser from './components/getuser/GetUser';
 function App() {
 
 
-  if (sessionStorage.getItem("user") === null) {
-    return <GetUser />
-  }
 
 
   return (
-    <div>
-      <ChatBox></ChatBox>
-    </div>
 
-  );
+    sessionStorage.getItem("userName") ? <ChatBox /> : <GetUser />
+  )
+
+
+
 }
 
 export default App;

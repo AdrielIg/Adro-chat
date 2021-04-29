@@ -1,11 +1,12 @@
+import "./GetUser.css"
 import GetUserInput from "./GetUserInput"
 
 const GetUser = () => {
     return (
-        <div>
-            <h2>Por Favor Introduzca su Usuario</h2>
+        <div className="wrapper-user">
+            <h2 className="header-user">Por Favor Introduzca su Usuario</h2>
             <GetUserInput />
-            <p>Se cerrara sesión al cerrar el navegador</p>s
+            <p className="text-user" >Se cerrara sesión al cerrar el navegador</p>s
         </div>
     )
 }

@@ -5,11 +5,15 @@ import addUser from "../../img/add-user.png"
 const GetUserInput = () => {
     const [user, setUser] = useState()
 
+    const getUserName = () => {
+        sessionStorage.setItem("userName", user)
+    }
+
 
     return (
-        <form>
+        <form onSubmit={getUserName}>
             <input placeholder="Inserte Usuario" value={user} onChange={(e) => setUser(e.target.value)} />
-            <button> <img src={addUser} /> </button>
+            <button className="button-user" > <img src={addUser} /> </button>
         </form>
     )
 }

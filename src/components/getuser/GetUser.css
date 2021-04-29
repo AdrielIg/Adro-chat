@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-user {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.header-user {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.text-user {
+  margin: 1rem 0;
+}
+.button-user {
+  background-color: white;
+}
+.button-user:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,63 @@
+.mensaje-right {
+  padding: 0.5rem 2rem;
+  background: black;
+  border-radius: 6px;
+  margin: 0.8rem 1rem;
+  position: relative;
+}
+
+.mensaje-right::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid black;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  top: 18px;
+  left: 98%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  align-items: flex-end;
+}
+
+/* MENSAJES DE TERCEROS*/
+
+.mensaje-left {
+  padding: 0.5rem 2rem;
+  background: rgba(139, 139, 139, 0.315);
+  border-radius: 6px;
+  margin: 0.8rem 1rem;
+  position: relative;
+}
+
+.mensaje-left::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-right: 5px solid rgba(139, 139, 139, 0.315);
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  top: 18px;
+  right: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  align-items: flex-start;
+}
+
+/*USER*/
+.user {
+  font-size: 1rem;
+  margin: 0 2rem;
+}
