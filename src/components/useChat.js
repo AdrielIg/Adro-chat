@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { db } from "../Firebase"
+import { db } from "../firebase/Firebase"
 
 
 export const useChat = () => {

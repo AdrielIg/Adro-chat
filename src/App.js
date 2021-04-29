@@ -3,7 +3,7 @@ import './App.css';
 
 import { useState } from 'react';
 import { useChat } from './components/useChat';
-import { db } from './Firebase';
+import { db } from './firebase/Firebase';
 
 function App() {
 
